@@ -23,13 +23,13 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService empSer;
 
-	@PostMapping(value = "/insert")
+	@PostMapping(value = "/post")
 	public String addEmployee(@RequestBody Employee e) {
 
 		return empSer.addEmployee(e);
 	}
 
-	@PostMapping(value = "/insertingAll")
+	@PostMapping(value = "/postAll")
 	public String addEmployee1(@RequestBody Employee salary) throws SalaryException {
 
 		return empSer.addEmployee1(salary);
